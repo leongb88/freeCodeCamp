@@ -7,7 +7,7 @@ const completedStages = new Set();
 
 // if a lot of files are changed, it's faster to run prettier/eslint on the
 // whole project than to run them on each file separately
-module.exports = {
+module.exports = {d
   '*.(js|ts|tsx)': async files => {
     if (completedStages.has('js')) return [];
 
